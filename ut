@@ -645,7 +645,8 @@ env:UT_FILTER                   // If UT_FILTER environment variable is set
 #define UT_RUN_TIME mutable
 #define UT_COMPILE_TIME consteval
 
-extern "C" char *getenv(const char *) throw();
+//extern "C" char *getenv(const char *) throw();
+extern "C" char *getenv (const char *);
 
 namespace ut::inline v2_1_6 {
 namespace type_traits {
